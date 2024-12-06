@@ -39,20 +39,27 @@ TEST_CASE("Testa velha O Coluna", "[single-file]") {
                           { 2, 1, 0},
                           { 2, 1, 0}
                     };
-    REQUIRE(VerificaVelha(teste4) == 0);
+    REQUIRE(VerificaVelha(teste4) == 2);
 }
 TEST_CASE("Testa velha O Linha", "[single-file]") {
     int teste5[3][3]= {   { 1, 0, 1},
                           { 2, 2, 2},
                           { 1, 0, 0}
                     };
-    REQUIRE(VerificaVelha(teste5) == 0);
+    REQUIRE(VerificaVelha(teste5) == 2);
 }
 TEST_CASE("Testa velha O Diagonal", "[single-file]") {
     int teste6[3][3]= {   { 0, 1, 2},
                           { 1, 2, 0},
                           { 2, 1, 0}
                     };
-    REQUIRE(VerificaVelha(teste6) == 0);
+    REQUIRE(VerificaVelha(teste6) == 2);
+}
+TEST_CASE("Testa empate", "[single-file]") {
+    int teste7[3][3]= {   { 1, 1, 2},
+                          { 2, 2, 1},
+                          { 2, 1, 2}
+                    };
+    REQUIRE(VerificaVelha(teste7) == 0);
 }
 
