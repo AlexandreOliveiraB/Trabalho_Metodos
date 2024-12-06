@@ -1,1 +1,2 @@
 # Trabalho_Metodos
+Eu usei o VSCode, rodei os comandos igual do makefile, tive que mudar o cpplint pois estava desatualizado, só rodar normal pelo terminal com o comando make ou ./testa_velha que está funcionando.
