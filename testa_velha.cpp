@@ -25,6 +25,6 @@ TEST_CASE("Teste velha X Linha", "[single-file]") {
                           { 0, 2, 2 },
                           { 2, 0, 0 }
                     };
-    REQUIRE(VerificaVelha(teste2) == 0);
+    REQUIRE(VerificaVelha(teste2) == 1);
 }
 
