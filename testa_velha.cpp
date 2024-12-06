@@ -55,18 +55,25 @@ TEST_CASE("Testa velha O Diagonal", "[single-file]") {
                     };
     REQUIRE(VerificaVelha(teste6) == 2);
 }
-TEST_CASE("Testa empate", "[single-file]") {
+TEST_CASE("Testa Empate", "[single-file]") {
     int teste7[3][3]= {   { 1, 2, 2},
                           { 2, 1, 1},
                           { 2, 1, 2}
                     };
     REQUIRE(VerificaVelha(teste7) == 0);
 }
-TEST_CASE("Testa indefinido", "[single-file]") {
+TEST_CASE("Testa Indefinido", "[single-file]") {
     int teste8[3][3]= {   { 2, 1, 2},
                           { 1, 0, 1},
                           { 2, 1, 2}
                     };
     REQUIRE(VerificaVelha(teste8) == -1);
+}
+TEST_CASE("Testa Impossivel", "[single-file]") {
+    int teste9[3][3]= {   { 1, 1, 1},
+                          { 1, 1, 1},
+                          { 1, 1, 1}
+                    };
+    REQUIRE(VerificaVelha(teste9) == -2);
 }
 
