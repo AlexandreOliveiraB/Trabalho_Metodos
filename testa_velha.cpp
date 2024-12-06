@@ -41,4 +41,11 @@ TEST_CASE("Testa velha O Coluna", "[single-file]") {
                     };
     REQUIRE(VerificaVelha(teste4) == 0);
 }
+TEST_CASE("Testa velha O Linha", "[single-file]") {
+    int teste5[3][3]= {   { 1, 0, 1},
+                          { 2, 2, 2},
+                          { 1, 0, 0}
+                    };
+    REQUIRE(VerificaVelha(teste5) == 0);
+}
 
