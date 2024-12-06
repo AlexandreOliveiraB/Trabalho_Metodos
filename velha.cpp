@@ -1,8 +1,10 @@
 /**
+*"Copyright 2024 <Alexandre>" 
+*/
+/**
  * \file  velha.cpp
  */
 
- 
 #include "velha.hpp"
 #include "catch.hpp"
 
@@ -14,7 +16,11 @@
  *  Descrever o que a funcao faz
  */ 
 
-int VerificaVelha( int velha[3][3] )
-{
-	return 0; /*!< retorna zero para teste */ 
+int VerificaVelha(int velha[3][3]) {
+    for (int j = 0; j < 3; j++) {
+        if ((velha[0][j] == 1) && (velha[1][j] == 1) && (velha[2][j] == 1)) {
+           return 1;
+        }
+    }
+    return 0; /*!< retorna zero para teste */
 }
