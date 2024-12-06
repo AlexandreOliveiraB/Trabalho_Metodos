@@ -20,11 +20,18 @@ TEST_CASE("Testa velha X Coluna", "[single-file]") {
                     };
     REQUIRE(VerificaVelha(teste1) == 1);
 }
-TEST_CASE("Teste velha X Linha", "[single-file]") {
+TEST_CASE("Testa velha X Linha", "[single-file]") {
     int teste2[3][3]= {   { 1, 1, 1 },
                           { 0, 2, 2 },
                           { 2, 0, 0 }
                     };
     REQUIRE(VerificaVelha(teste2) == 1);
+}
+TEST_CASE("Testa velha X Diagonal", "[single-file]") {
+    int teste3[3][3]= {   { 1, 0, 2 },
+                          { 2, 1, 0 },
+                          { 0, 2, 1 }
+                    };
+    REQUIRE(VerificaVelha(teste3) == 1);
 }
 
