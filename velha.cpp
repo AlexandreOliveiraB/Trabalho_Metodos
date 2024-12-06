@@ -17,6 +17,19 @@
  */ 
 
 int VerificaVelha(int velha[3][3]) {
+    int countX = 0, countO = 0;
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            if (velha[i][j] == 1)
+                countX++;
+            if (velha[i][j] == 0)
+                countO++;
+        }
+        if (i == 2) {
+            if ((countX > 5) || (countO > 5))
+                return -2;
+        }
+    }
     for (int j = 0; j < 3; j++) {
         if ((velha[0][j] == 1) && (velha[1][j] == 1) && (velha[2][j] == 1)) {
            return 1;
