@@ -56,8 +56,8 @@ TEST_CASE("Testa velha O Diagonal", "[single-file]") {
     REQUIRE(VerificaVelha(teste6) == 2);
 }
 TEST_CASE("Testa empate", "[single-file]") {
-    int teste7[3][3]= {   { 1, 1, 2},
-                          { 2, 2, 1},
+    int teste7[3][3]= {   { 1, 2, 2},
+                          { 2, 1, 1},
                           { 2, 1, 2}
                     };
     REQUIRE(VerificaVelha(teste7) == 0);

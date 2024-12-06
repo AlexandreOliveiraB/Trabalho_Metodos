@@ -39,9 +39,17 @@ int VerificaVelha(int velha[3][3]) {
         if ((velha[i][0] == 2) && (velha[i][1] == 2) && (velha[i][2] == 2))
             return 2;
     }
-    if ((velha[0][0] == 2) && (velha[1][1] == 2) && (velha[2][0] == 2))
+    if ((velha[0][0] == 2) && (velha[1][1] == 2) && (velha[2][2] == 2))
         return 2;
-    if ((velha[0][2] == 2) && (velha[1][1] == 2) && (velha[0][2] == 2))
+    if ((velha[0][2] == 2) && (velha[1][1] == 2) && (velha[2][0] == 2))
         return 2;
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            if (velha[i][j] == 0)
+                break;
+        }
+        if (i == 2)
+            return 0;
+    }
     return 15; /*!< retorna zero para teste */
 }
