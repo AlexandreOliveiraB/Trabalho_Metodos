@@ -64,5 +64,5 @@ int VerificaVelha(int velha[3][3]) {
         if (i == 2)
             return 0;
     }
-    return 15; /*!< retorna zero para teste */
+    return 15; /*!< retorna 15 para default */
 }
