@@ -22,5 +22,5 @@ int VerificaVelha(int velha[3][3]) {
            return 1;
         }
     }
-    return 0; /*!< retorna zero para teste */
+    return 15; /*!< retorna zero para teste */
 }
