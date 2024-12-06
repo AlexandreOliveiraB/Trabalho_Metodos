@@ -62,4 +62,11 @@ TEST_CASE("Testa empate", "[single-file]") {
                     };
     REQUIRE(VerificaVelha(teste7) == 0);
 }
+TEST_CASE("Testa indefinido", "[single-file]") {
+    int teste8[3][3]= {   { 2, 1, 2},
+                          { 1, 0, 1},
+                          { 2, 1, 2}
+                    };
+    REQUIRE(VerificaVelha(teste8) == -1);
+}
 
